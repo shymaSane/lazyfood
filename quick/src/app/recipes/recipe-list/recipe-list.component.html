@@ -12,9 +12,10 @@
                 </div>
 
                 <span class = "pull-right">
-                        <img class="img-responsive" src="{{recipe.imgPath}}" alt="{{recipe.name}}">
+                        <img class="img-responsive" [src]='recipe.imgPath' [alt]="recipe.name" height = "150" width = "150">
                 </span>    
             </a>
+            <hr>
             <app-recipe-item></app-recipe-item>
     </div>
 </div>
