@@ -1,13 +1,14 @@
 
 
-<a href="#" class="list-group-item clearfix">
+<a href="#" class="list-group-item clearfix" (click) = "onClick(recipe)
+">
   <div class="pull-left">
-          <h4 class="list-group-item-heading">{{recipe.name}}</h4>
-          <p class="list-group-item-text">{{recipe.description}}</p>
+          <h4 class="list-group-item-heading">{{rec.name}}</h4>
+          <p class="list-group-item-text">{{rec.description}}</p>
   </div>
 
   <span class = "pull-right">
-          <img class="img-responsive" [src]='recipe.imgPath' [alt]="recipe.name" height = "150" width = "150">
+          <img class="img-responsive" [src]='rec.imgPath' [alt]="rec.name" height = "150" width = "150">
   </span>    
 </a>
 <br>
