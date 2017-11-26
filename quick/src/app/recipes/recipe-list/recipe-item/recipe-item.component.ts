@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { Input } from '@angular/core/src/metadata/directives';
+import { Component, OnInit, Input } from '@angular/core';
 import {Recipes} from '../../recipes.model'
 
 @Component({
@@ -8,7 +7,7 @@ import {Recipes} from '../../recipes.model'
   styleUrls: ['./recipe-item.component.css']
 })
 export class RecipeItemComponent implements OnInit {
-  @Input() rec: Recipes
+  @Input() recipe: Recipes
 
   constructor() { }
 
