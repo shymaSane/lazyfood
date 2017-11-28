@@ -13,9 +13,16 @@ ingredients: Ingredients[] = [
   new Ingredients ('tomato', 3),
   new Ingredients ('garlic', 1),
 ]
+  
   constructor() { }
 
   ngOnInit() {
+    console.log(this.ingredients)
+  }
+
+  ingredientWasAdded($event){
+  //  this.ingredients.push(new Ingredients($event, 3))
+  console.log($event)
   }
 
 }
