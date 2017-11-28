@@ -10,7 +10,7 @@ export class RecipeItemComponent implements OnInit {
   @Input() rec: Recipes
   @Output() showItem = new EventEmitter<void>();
 
-  onClick(){
+  clicked(){
    this.showItem.emit();
   }
 
