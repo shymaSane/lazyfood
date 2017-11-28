@@ -17,12 +17,11 @@ ingredients: Ingredients[] = [
   constructor() { }
 
   ngOnInit() {
-    console.log(this.ingredients)
+  
   }
 
-  ingredientWasAdded($event){
-  //  this.ingredients.push(new Ingredients($event, 3))
-  console.log($event)
+  ingredientWasAdded(ingredient: Ingredients){
+    this.ingredients.push(ingredient)
   }
 
 }
